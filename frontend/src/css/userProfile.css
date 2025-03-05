@@ -1,0 +1,14 @@
+#userProfile{
+    width: 72%;
+    margin-top: 2rem;
+}
+#userProfile .userDetails{
+    padding: 1rem;
+    background-color: #2e2d37;
+}
+@media (max-width : 626px){
+    #userProfile{
+        width: 100%;
+        margin-top:5rem;
+    }
+}

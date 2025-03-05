@@ -1,0 +1,184 @@
+#navbar{
+    padding-inline: 20px;
+    position: relative;
+}
+#navbar .slidingMenu{
+    width: 80%;
+    min-width: 280px;
+    max-width: 500px;
+    position: absolute;
+    top: calc(100% + 10px);
+    left:  calc(-100% - 50px);
+    background-color: #253038;
+    z-index: 5;
+    padding: 20px 50px;
+    border-radius: 1.2rem;
+}
+#navbar .slidingMenu.slideDivtoRight{
+    left: 20px;
+    animation: slideDivtoRight 500ms ease-in-out ;
+}
+#navbar .slidingMenu.slideDivtoLeft{
+    left:  calc(-100% - 50px);
+    animation: slideDivtoLeft 500ms ease-in-out ;
+}
+#navbar .slidingMenu ul a{
+    text-decoration: none;
+}
+#navbar .slidingMenu ul li{
+    color: #FFECD1;
+    cursor: pointer;
+    margin: 5px 7px;
+    padding: 5px 7px;
+}
+#navbar .slidingMenu ul li:hover{
+    font-weight: bold;
+}
+#navbar div form{
+    width: 50%;
+}
+
+#navbar div form .form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 260px;
+}
+
+#navbar div form .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+#navbar div form .form__field::placeholder {
+    color: transparent;
+}
+
+#navbar div form .form__field:placeholder-shown~.form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+}
+
+#navbar div form .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #d3d3d3;
+    pointer-events: none;
+}
+
+#navbar div form .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 1;
+}
+
+#navbar div form .form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 500;
+}
+
+#navbar div form .form__field:required,
+#navbar div form .form__field:invalid {
+    box-shadow: none;
+}
+
+#navbar div form .importedBtn {
+    height: 35px;
+    padding: 2px 12px;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+#navbar div form .importedBtn::before {
+    content: '';
+    width: 0;
+    height: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+#navbar div form .importedBtn:hover::before {
+    width: 125%;
+}
+
+#navbar div form .importedBtn:hover {
+    font-weight: bold;
+    color: #111;
+}
+
+@keyframes slideDivtoRight{
+    0%{
+        opacity: 0;
+        left:  calc(-100% - 50px);
+    }
+    100%{
+        opacity: 1;
+        left: 20px;
+    }
+}
+
+@keyframes slideDivtoLeft{
+    0%{
+        opacity: 1;
+        left: 20px;
+    }
+    100%{
+        opacity: 0;
+        left:  calc(-100% - 50px);
+    }
+}
+
+
+@media (max-width : 850px){
+    #navbar div form {
+        width: 85%;
+    }
+}
+@media (max-width : 626px){
+    #navbar{
+        padding-top: 10px;
+        padding-inline: 10x;
+    }
+    #navbar div form {
+        width: 100%;
+    }
+    #navbar div form .form__group{
+        max-width: none;
+    }
+    #navbar .profile{
+        margin-left: 15px;
+    }
+}

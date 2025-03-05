@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* background-image: linear-gradient(45deg, black, rgb(7, 7, 33), rgb(47, 12, 51)); */
+  background:  black;
+  background-size: 400%;
+}
+.animate-from-top {
+    background-color: rgb(136 202 255);
+    /* transform: translate(50%,30%); */
+    position: absolute;
+    top: -200px; /* Initial position above the viewport */
+    animation: slideFromTop 1s ease forwards; /* Animation properties */
+  }
+  
+  @keyframes slideFromTop {
+    from {
+      opacity: 0;
+      top: -200px; 
+    }
+    to {
+      top: 0; 
+      opacity: 1;
+    }
+  }
+.animate-from-center{
+  background-color: rgb(101, 112, 133);
+  transform: translate(50%,30%);
+  position: fixed;
+  color: aliceblue;
+  /* top: -200px; Initial position above the viewport */
+  animation: slideFromCenter 1s ease forwards; /* Animation properties */
+}
+
+@keyframes slideFromCenter {
+  from {
+    opacity: 1;
+    top: 0;
+  }
+  to {
+     top: -200px; 
+    opacity: 0;
+    display: none;
+  }
+}
+
+.cardSize{
+  width: 170px;
+}
+.cardName{
+  height: 60px;
+}
+.cradImg{
+  height: 150px;
+}
+.width-adjust{
+  width: 55%;
+}
+
+@media only screen and (max-width:625px){
+ 
+  .cardSize{
+    width: 40%;
+  }
+  .cradImg{
+    height: 200px;
+  }
+  .cardName{
+    height: 45px;
+  }
+}
+@media only screen and (max-width:520px){
+  .cradImg{
+    height: 170px;
+  }
+}
+@media only screen and (max-width:450px){
+  .cradImg{
+    height: 140px;
+  }
+}
+
+
+@media only screen and (max-width:900px){
+  .width-adjust{
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width:550px){
+  .width-adjust{
+    width: 85%;
+  }
+}
+@media only screen and (max-width:400px){
+  .width-adjust{
+    width: 95%;
+  }
+}

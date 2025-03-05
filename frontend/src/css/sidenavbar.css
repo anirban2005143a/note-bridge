@@ -1,0 +1,72 @@
+#sideNavbar {
+  width: 26%;
+  background-image: linear-gradient(90deg, black, transparent);
+}
+
+#sideNavbar .dropdown a img {
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width:900px) {
+  #sideNavbar {
+    width: 30%;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width:780px) {
+  #sideNavbar {
+    width: 30%;
+    padding: 0;
+  }
+  #sideNavbar .navlist li .importedbtn{
+    width: 100%;
+    padding-inline: 10px;
+  }
+}
+
+@media only screen and (max-width:625px) {
+  #sideNavbar {
+    width: 15%;
+    padding: 0;
+  }
+
+  #sideNavbar .navlist ul {
+    display: none;
+  }
+
+  #sideNavbar .dropdown a span {
+    display: none;
+  }
+
+  #sideNavbar .dropdown a img {
+    margin-right: 0.2rem;
+  }
+
+}
+
+
+.sideNavbar .navlist li .importedbtn {
+  width: 85%;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(255, 241, 215);
+  font-weight: 700;
+  transition: all 0.6s ease;
+}
+
+.sideNavbar .navlist li .importedbtn:active {
+  scale: 0.92;
+}
+
+.sideNavbar .navlist li .importedbtn:hover {
+  /* background: rgb(2, 29, 78); */
+  background-image: linear-gradient(270deg, rgba(0, 76, 217, 0.681) 0%, rgba(31, 215, 232, 0.873) 70%);
+  color: rgb(4, 4, 38);
+  box-shadow: 0px 0px 20px #2e99d3;
+}

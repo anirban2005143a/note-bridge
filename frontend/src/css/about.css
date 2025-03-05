@@ -1,0 +1,53 @@
+#about{
+  width: 100%;
+  padding-inline: 30px;
+  overflow: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#about .aboutHeading{
+  padding: 20px 0px;
+  font-size: 40px;
+  background: linear-gradient(74deg, #0414ff,#b20bff 0%,  #08ffa5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+#about .card1{
+  background-color: #585372;
+  color: #ffffffd3;
+}
+#about .card2,#about .card3,#about .card4{
+background-color: #44455b;
+color: #ffffffd3;
+}
+#about .card2 ul,#about .card3 ul,#about .card4 ul{
+  background-color: #1c1c25; 
+  border-radius: 0.8rem;
+}
+
+#about .card2 .heading,#about .card3 .heading,#about .card4 .heading{
+  font-weight: 700;
+  font-size: 30px;
+  background: linear-gradient(90deg,#75b3ff, #db94ff 20%   );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+#about .card2 ul ul,#about .card3 ul ul,#about .card4 ul ul{
+  background-color: #3c3c4d;
+  list-style: georgian;
+  padding-inline:0px ;
+  border-radius: 0.5rem;
+}
+#about .disclaimer{
+  font-weight: 300;
+  font-size: medium;
+}
+
+@media (max-width : 700px){
+  #about {
+    padding-inline: 15px;
+  }
+}

@@ -1,0 +1,36 @@
+.importedcard {
+  width: 55%;
+  height: auto;
+  border-radius: 20px;
+  background: transparent;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #fbfee349;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+/*Hover*/
+.importedcard:hover {
+  border-color: #adade993;
+  box-shadow: 0 4px 18px 0 #adade996;
+}
+.importedcard h2{
+  color: beige;
+}
+
+@media (max-width:850px){
+  .importedcard {
+    width: 60%;
+  }
+}
+@media (max-width:650px){
+  .importedcard {
+    width: 75%;
+  }
+}
+@media (max-width:450px){
+  .importedcard {
+    width: 85%;
+  }
+}
